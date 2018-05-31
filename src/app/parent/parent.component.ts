@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 export class ParentComponent {
   parentText = 'Текст по умолчанию';
 
-  childClick(childText) {
+  getChildText(childText) {
     this.parentText = childText;
+  }
+
+  setDefaultText() {
+    this.parentText = 'Текст по умолчанию';
   }
 
 }

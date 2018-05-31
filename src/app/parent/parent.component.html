@@ -7,7 +7,8 @@
           ></h4>
         </div>
         <div class="card-footer">
-          <app-child (childEmitter)="childClick($event)"></app-child>
+          <app-child (childEmitter)="getChildText($event)"></app-child>
+          <app-child (childEmitter)="setDefaultText()"></app-child>
         </div>
       </div>
     </div>
