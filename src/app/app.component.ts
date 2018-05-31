@@ -6,10 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isPressed = false;
+  firstPickShow = false;
+  secondPickShow = false;
 
+  showFirstPick() {
+    this.secondPickShow = false;
+    this.firstPickShow = true;
+  }
 
-  changeColor() {
-    this.isPressed = !this.isPressed;
+  showSecondPick() {
+    this.firstPickShow = false;
+    this.secondPickShow = true;
+  }
+
+  showAllPick() {
+    this.firstPickShow = true;
+    this.secondPickShow = true;
   }
 }
