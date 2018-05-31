@@ -13,39 +13,7 @@
 
         <!-- main-content -->
 
-        <div class="row">
-          <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
-            <div class="card">
-              <div class="card-footer">
-                <button
-                  class="btn btn-sm btn-info-outline"
-                  (click)="showFirstPick()"
-                >показать первую картинку</button>
-                <button
-                  class="btn btn-sm btn-info-outline"
-                  (click)="showSecondPick()"
-                >показать вторую картину</button>
-                <button
-                  class="btn btn-sm btn-info-outline"
-                  (click)="showAllPick()"
-                >показать все картинки</button>
-              </div>
-              <div
-                class="card-img"
-                [class.hide]="!firstPickShow"
-              >
-                <img src="http://tambnguyen.com/wp-content/uploads/2011/08/Christoph_Malin-500x200.jpg">
-              </div>
-              <div
-                class="card-img"
-                [class.hide]="!secondPickShow"
-              >
-                <img src="https://data.whicdn.com/images/97455408/original.png">
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <app-parent></app-parent>
 
         <!--  -->
         
